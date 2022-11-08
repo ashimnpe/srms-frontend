@@ -3,16 +3,24 @@
     <div class="page-header clear-filter" filter-color="orange">
       <parallax
         class="page-header-image"
-        style="background-image:url('img/header.jpg')"
+        style="background-image:url('img/head.jpg')"
       >
       </parallax>
       <div class="container">
         <div class="content-center brand">
-          <img class="n-logo" src="img/now-logo.png" alt="" />
-          <h1 class="h1-seo">Now UI Kit.</h1>
-          <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+          <!-- <img class="n-logo" src="img/now-logo.png" alt="" /> -->
+          <!-- <h1 class="h1-seo">Now UI Kit.</h1> -->
+          <h3 class="faculty">
+            <span>BBS</span>
+            <span> BBA</span>
+            <span> BIM</span>
+            <span> BBA-FI</span>
+            <span> BBM</span>
+            <span> MBS</span>
+            <span> MBM</span>
+          </h3>
         </div>
-        <h6 class="category category-absolute">
+        <!-- <h6 class="category category-absolute">
           Designed by
           <a href="http://invisionapp.com/" target="_blank">
             <img src="img/invision-white-slim.png" class="invision-logo" /> </a
@@ -23,7 +31,7 @@
               class="creative-tim-logo"
             /> </a
           >.
-        </h6>
+        </h6> -->
       </div>
     </div>
     <div class="main">
@@ -109,4 +117,9 @@ export default {
   }
 };
 </script>
-<style></style>
+<style>
+  .faculty span{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+  }
+</style>

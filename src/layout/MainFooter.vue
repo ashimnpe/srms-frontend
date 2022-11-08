@@ -8,17 +8,17 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
+            <a href="#">
+              Shanker Dev Campus
             </a>
           </li>
           <li>
-            <a href="https:///presentation.creative-tim.com">
+            <a href="#">
               About Us
             </a>
           </li>
           <li>
-            <a href="https:///blog.creative-tim.com">
+            <a href="#">
               Blog
             </a>
           </li>

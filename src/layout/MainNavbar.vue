@@ -8,9 +8,9 @@
   >
     <template>
       <router-link v-popover:popover1 class="navbar-brand" to="/">
-        Now Ui Kit
+        SHANKER DEV CAMPUS
       </router-link>
-      <el-popover
+      <!-- <el-popover
         ref="popover1"
         popper-class="popover"
         placement="bottom"
@@ -20,37 +20,30 @@
         <div class="popover-body">
           Designed by Invision. Coded by Creative Tim
         </div>
-      </el-popover>
+      </el-popover> -->
     </template>
     <template slot="navbar-menu">
       <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://www.creative-tim.com/product/vue-now-ui-kit"
-          target="_blank"
-        >
-          <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-          <p>Download</p>
-        </a>
-      </li>
-      <drop-down
-        tag="li"
-        title="Components"
-        icon="now-ui-icons design_app"
-        class="nav-item"
-      >
-        <nav-link to="/">
-          <i class="now-ui-icons business_chart-pie-36"></i> All components
+        <nav-link to="/login" class=" text-white nav-link">
+          <i class="now-ui-icons users_circle-08"></i> About us
         </nav-link>
-        <a
-          href="https://demos.creative-tim.com/vue-now-ui-kit/documentation"
-          target="_blank"
-          class="dropdown-item"
-        >
-          <i class="now-ui-icons design_bullet-list-67"></i> Documentation
-        </a>
-      </drop-down>
-      <drop-down
+      </li>
+      <li class="nav-item">
+        <nav-link to="/login" class=" text-white nav-link">
+          <i class="now-ui-icons users_circle-08"></i> Programs
+        </nav-link>
+      </li>
+      <li class="nav-item">
+        <nav-link to="/login" class=" text-white nav-link">
+          <i class="now-ui-icons users_circle-08"></i> Contact
+        </nav-link>
+      </li>
+      <li class="nav-item">
+        <nav-link to="/login" class=" text-white nav-link">
+          <i class="now-ui-icons users_circle-08"></i> Login
+        </nav-link>
+      </li>
+      <!-- <drop-down
               tag="li"
               title="Examples"
               icon="now-ui-icons design_image"
@@ -65,8 +58,9 @@
         <nav-link to="/profile">
           <i class="now-ui-icons users_single-02"></i> Profile
         </nav-link>
-      </drop-down>
-      <li class="nav-item">
+      </drop-down> -->
+      
+      <!-- <li class="nav-item">
         <a
           class="nav-link btn btn-neutral"
           href="https://www.creative-tim.com/product/vue-now-ui-kit-pro"
@@ -75,9 +69,10 @@
           <i class="now-ui-icons arrows-1_share-66"></i>
           <p>Upgrade to PRO</p>
         </a>
-      </li>
+      </li> -->
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
+        
         <a
           class="nav-link"
           rel="tooltip"
@@ -115,7 +110,7 @@
           <i class="fab fa-instagram"></i>
           <p class="d-lg-none d-xl-none">Instagram</p>
         </a>
-      </li>
+      </li> -->
     </template>
   </navbar>
 </template>
@@ -130,7 +125,6 @@ export default {
     colorOnScroll: Number
   },
   components: {
-    DropDown,
     Navbar,
     NavLink,
     [Popover.name]: Popover
