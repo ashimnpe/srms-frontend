@@ -2,6 +2,9 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Index from './pages/Index.vue';
 import Landing from './pages/Landing.vue';
+import About from './pages/About.vue';
+import Contact from './pages/Contact.vue';
+import Programs from './pages/Programs.vue';
 import Login from './pages/Login.vue';
 import Profile from './pages/Profile.vue';
 import MainNavbar from './layout/MainNavbar.vue';
@@ -13,7 +16,7 @@ export default new Router({
   linkExactActiveClass: 'active',
   routes: [
     {
-      path: '/',
+      path: '/index',
       name: 'index',
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
@@ -22,11 +25,38 @@ export default new Router({
       }
     },
     {
-      path: '/landing',
+      path: '/',
       name: 'landing',
       components: { default: Landing, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: '/about',
+      name: 'About',
+      components: { default: About, header: MainNavbar, footer: MainFooter },
+      props: {
+        // header: { colorOnScroll: 400 },
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      components: { default: Contact, header: MainNavbar, footer: MainFooter },
+      props: {
+        // header: { colorOnScroll: 400 },
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: '/programs',
+      name: 'Programs',
+      components: { default: Programs, header: MainNavbar, footer: MainFooter },
+      props: {
+        // header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }
       }
     },

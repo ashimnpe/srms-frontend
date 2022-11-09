@@ -1,28 +1,10 @@
 <template>
   <div>
-    <div class="page-header page-header-small">
-      <parallax
-        class="page-header-image"
-        style="background-image: url('img/head1.jpg')"
-      >
-      </parallax>
-      <div class="content-center">
-        <div class="container">
-          <h3 
-            v-for="(faculty, i) in faculties"
-            :key="i"  
-            class="title faculty"
-          >
-            <span>{{ faculty }}</span>
-          </h3>
-        </div>
-      </div>
-    </div>
     <div class="section section-about-us">
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">Who we are?</h2>
+            <h2 class="title">ABOUT US</h2>
             <h5 class="description">
               Shanker Dev Campus (SDC), located at the heart of Kathmandu metropolitan city, is effortlessly reachable from any corner of the Kathmandu valley. SDC, as the pioneer constituent campus of Tribhuvan University (TU), is synonymous to management education in Nepal. Thus, it has become the premier duty of SDC to produce world- class standard manpower targeting the global need. Additionally, SDC is conscious of its duty of upholding the image of TU. SDC houses highly professional, dedicated, and competent faculty as required who focus onproducing world-class management manpower..
             </h5>
@@ -243,7 +225,7 @@ export default {
 <style>
   .faculty{
     display: inline-block;
-    margin: 5px;
+    margin-left: 15px;
 
   }
 </style>

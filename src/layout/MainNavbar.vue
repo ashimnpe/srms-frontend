@@ -24,17 +24,17 @@
     </template>
     <template slot="navbar-menu">
       <li class="nav-item">
-        <nav-link to="/login" class=" text-white nav-link">
+        <nav-link to="/about" class=" text-white nav-link">
           <i class="now-ui-icons users_circle-08"></i> About us
         </nav-link>
       </li>
       <li class="nav-item">
-        <nav-link to="/login" class=" text-white nav-link">
+        <nav-link to="/programs" class=" text-white nav-link">
           <i class="now-ui-icons users_circle-08"></i> Programs
         </nav-link>
       </li>
       <li class="nav-item">
-        <nav-link to="/login" class=" text-white nav-link">
+        <nav-link to="/contact" class=" text-white nav-link">
           <i class="now-ui-icons users_circle-08"></i> Contact
         </nav-link>
       </li>
