@@ -6,7 +6,7 @@
         style="background-image:url('img/head.jpg')"
       >
       </parallax>
-      <div class="container">
+      <div class="container"  >
         <div class="content-center brand">
           <!-- <img class="n-logo" src="img/now-logo.png" alt="" /> -->
           <!-- <h1 class="h1-seo">Now UI Kit.</h1> -->
@@ -18,6 +18,7 @@
             <span> BBM</span>
             <span> MBS</span>
             <span> MBM</span>
+            <span> MBA-FI</span>
           </h3>
         </div>
         <!-- <h6 class="category category-absolute">

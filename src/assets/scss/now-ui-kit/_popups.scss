@@ -15,7 +15,7 @@
         border-bottom-color: transparent;
     }
 
-    .popover-header{
+    .popover-header{ 
         color: $default-color-opacity;
         font-size: $font-size-base;
         text-transform: capitalize;
@@ -27,7 +27,7 @@
     }
 
     &:before{
-        display: none;
+        display: none;   
     }
 
     &.bs-tether-element-attached-top:after{
@@ -54,6 +54,7 @@
     &.popover-success{
         @include popover-color($success-color, $white-color);
     }
+
 }
 
 
