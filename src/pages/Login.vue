@@ -1,59 +1,53 @@
 <template>
-  <div class="page-header clear-filter" filter-color="orange">
+  <div class="page-header">
     <div
       class="page-header-image"
-      style="background-image: url('img/login.jpg')"
-    ></div>
+      style="background-image: url('img/login.jpg')"></div>
     <div class="content">
       <div class="container">
         <div class="col-md-5 ml-auto mr-auto">
-          <card type="login" plain>
-            <div slot="header" class="logo-container">
-              <img v-lazy="'img/now-logo.png'" alt="" />
+          <card type="login" style="max-width: 420px;">
+            <div slot="header" class="logo-container mr-auto ml-auto m-3">
+              <img v-lazy="'img/tu-logo.png'" alt="" />
             </div>
+            <div class="card-title font-weight-bold text-uppercase">Sign in to access your account!</div>
+              
+              <div class="card-body">
+                <label class="pull-left">Email Address</label>
+                <input
+                  v-modal="email"
+                  type="email"
+                  class="input form-control p-3"
+                  placeholder="Enter your Email Address"
+                />
 
-            <fg-input
-              class="no-border input-lg"
-              addon-left-icon="now-ui-icons users_circle-08"
-              placeholder="First Name..."
-            >
-            </fg-input>
+                <label class="pull-left">Password</label>
+                  <input
+                    type="password"
+                    class="input form-control p-3"
+                    placeholder="Enter your Password"
+                  />
 
-            <fg-input
-              class="no-border input-lg"
-              addon-left-icon="now-ui-icons text_caps-small"
-              placeholder="Last Name..."
-            >
-            </fg-input>
+                  <div class="card-footer text-center">
+                    <a
+                      class="btn btn-primary btn-round btn-lg"
+                      @click="loggedIn"
+                      >Login</a>
+                  </div>
+              </div>
 
-            <template slot="raw-content">
-              <div class="card-footer text-center">
-                <a
-                  href="#pablo"
-                  class="btn btn-primary btn-round btn-lg btn-block"
-                  >Get Started</a
-                >
-              </div>
-              <div class="pull-left">
-                <h6>
-                  <button class="btn btn-danger">
-                    Admission Form
-                  </button>
-                    
-                  
-                  <!-- <a href="#pablo" class="link footer-link">Admission Form</a> -->
-                </h6>
-              </div>
-              <div class="pull-right">
-                <h6>
-                  <a href="#pablo" class="link footer-link">Need Help?</a>
-                </h6>
-              </div>
-            </template>
-          </card>
+                <hr>
+                <!-- <div>
+                    <a class="link footer-link">
+                      <i class="fab fa-instagram"></i>
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-mail"></i>
+                    </a>
+                </div> -->
+            </card>
+          </div>
         </div>
       </div>
-    </div>
     <main-footer></main-footer>
   </div>
 </template>
@@ -69,6 +63,31 @@ export default {
     [Button.name]: Button,
     [FormGroupInput.name]: FormGroupInput,
   },
+  data(){
+    return{
+      users: [],
+      userForm: {
+        email: "",
+        password: ""
+      }
+    }
+  },
+  methods: {
+    loggedIn(){
+      console.log('logged in successful')
+    }
+  }
 };
 </script>
-<style></style>
+<style>
+.card-title{
+  color: black;
+}
+.card-body{
+  padding: 0;
+}
+label{
+  padding: 5px;
+  color: black;
+}
+</style>

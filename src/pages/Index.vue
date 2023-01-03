@@ -8,17 +8,14 @@
       </parallax>
       <div class="container"  >
         <div class="content-center brand">
-          <!-- <img class="n-logo" src="img/now-logo.png" alt="" /> -->
-          <!-- <h1 class="h1-seo">Now UI Kit.</h1> -->
-          <h3 class="faculty">
-            <span>BBS</span>
-            <span> BBA</span>
-            <span> BIM</span>
-            <span> BBA-FI</span>
-            <span> BBM</span>
-            <span> MBS</span>
-            <span> MBM</span>
-            <span> MBA-FI</span>
+          <img class="n-logo" src="img/now-logo.png" alt="" />
+          <h1 class="h1-seo">Now UI Kit.</h1>
+          <h3 
+            v-for="(faculty, i) in faculties"
+            :key="i"  
+            class="title faculty"
+          >
+            <span>{{ faculty }}</span>
           </h3>
         </div>
         <!-- <h6 class="category category-absolute">
@@ -64,7 +61,7 @@
     <carousel-section></carousel-section>
     <nucleo-icons-section></nucleo-icons-section>
     <div class="section">
-      <div class="container text-center">
+      <div class="container text-justify">
         <div class="row justify-content-md-center">
           <div class="col-md-12 col-lg-8">
             <h2 class="title">Completed with examples</h2>
@@ -115,12 +112,28 @@ export default {
     SignupForm,
     ExamplesSection,
     DownloadSection
+  },
+  data() {
+    return {
+      faculties: ['BBS','BBA','BIM','BBM','BBA-FI','MBS','MBM','MBA-FI'],
+      form: {
+        firstName: '',
+        email: '',
+        message: ''
+      },
+    };
   }
 };
 </script>
 <style>
   .faculty span{
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
     padding: 10px;
+  }
+
+  .faculty span:hover{
+    background-color: rgba(249, 99, 50, 0.6);
+    /* padding: 10px; */
+    cursor: pointer;
   }
 </style>

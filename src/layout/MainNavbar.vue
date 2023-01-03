@@ -26,22 +26,22 @@
     <template slot="navbar-menu">
       <li class="nav-item">
         <nav-link to="/about" class=" text-white nav-link">
-          <i class="now-ui-icons users_circle-08"></i> About us
+          About us
         </nav-link>
       </li>
       <li class="nav-item">
         <nav-link to="/programs" class=" text-white nav-link">
-          <i class="now-ui-icons users_circle-08"></i> Programs
+          Programs
         </nav-link>
       </li>
       <li class="nav-item">
         <nav-link to="/contact" class=" text-white nav-link">
-          <i class="now-ui-icons users_circle-08"></i> Contact
+          Contact
         </nav-link>
       </li>
       <li class="nav-item">
         <nav-link to="/login" class=" text-white nav-link">
-          <i class="now-ui-icons users_circle-08"></i> Login
+          Login
         </nav-link>
       </li>
     </template>

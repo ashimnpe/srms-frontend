@@ -77,7 +77,8 @@
 
             &.disabled{
                 opacity: .5;
-                color: $white-color;
+                // color: $white-color;
+                color: #f96332;
             }
         }
 
@@ -144,7 +145,7 @@
         padding-top: 20px !important;
     }
 
-    &.bg-white:not(.navbar-transparent){
+    &.bg-edxplor:not(.navbar-transparent){
         a:not(.dropdown-item):not(.btn){
             color: $default-color;
 
@@ -201,4 +202,8 @@
 
 .bg-edxplor{
     background-color: #007297 !important;
+}
+
+.bg-edxplor-new{
+    background-color: #f96332 !important;
 }

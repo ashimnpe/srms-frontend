@@ -177,7 +177,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-contact-us text-center">
+    <!-- <div class="section section-contact-us text-center">
       <div class="container">
         <h2 class="title">Want to work with us?</h2>
         <p class="description">Your project is very important to us.</p>
@@ -215,7 +215,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -229,7 +229,7 @@ export default {
   },
   data() {
     return {
-      faculties: ['BBS','BBA','BIM','BBM','BBA-FI','MBS','MBM'],
+      faculties: ['BBS','BBA','BIM','BBM','BBA-FI','MBS','MBM','MBA-FI'],
       form: {
         firstName: '',
         email: '',
@@ -244,6 +244,13 @@ export default {
   .faculty{
     display: inline-block;
     margin: 5px;
+  }
 
+  .faculty span{
+    padding: 5px;
+  }
+
+  p{
+    text-align: justify;
   }
 </style>

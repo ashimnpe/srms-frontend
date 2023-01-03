@@ -6,7 +6,7 @@
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">CONTACT</h2>
             <h5 class="description">
-              Shanker Dev Campus (SDC), located at the heart of Kathmandu metropolitan city, is effortlessly reachable from any corner of the Kathmandu valley. SDC, as the pioneer constituent campus of Tribhuvan University (TU), is synonymous to management education in Nepal. Thus, it has become the premier duty of SDC to produce world- class standard manpower targeting the global need. Additionally, SDC is conscious of its duty of upholding the image of TU. SDC houses highly professional, dedicated, and competent faculty as required who focus onproducing world-class management manpower..
+              Contact us 
             </h5>
           </div>
         </div>
